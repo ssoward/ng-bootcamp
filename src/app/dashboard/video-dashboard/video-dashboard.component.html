@@ -1,5 +1,5 @@
 <app-video-list
-  [videos]="videoList"
+  [videos]="(videoList | async)"
   [selectedId]="selectedVideo?.id"
   (videoSelected)="selectVideo($event)"
 ></app-video-list>

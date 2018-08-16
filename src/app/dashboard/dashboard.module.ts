@@ -8,6 +8,7 @@ import { StatFiltersComponent } from './stat-filters/stat-filters.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
 import { VideoCardComponent } from './video-card/video-card.component';
 
+
 @NgModule({
   imports: [
     CommonModule,
