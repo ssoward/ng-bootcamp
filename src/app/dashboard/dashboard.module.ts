@@ -7,13 +7,11 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { StatFiltersComponent } from './stat-filters/stat-filters.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
 import { VideoCardComponent } from './video-card/video-card.component';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
-    DashboardRoutingModule,
-    HttpClientModule
+    DashboardRoutingModule
   ],
   declarations: [VideoDashboardComponent, VideoListComponent, StatFiltersComponent, VideoPlayerComponent, VideoCardComponent]
 })
