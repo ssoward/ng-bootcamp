@@ -1,0 +1,9 @@
+<div class="card teal"
+  (click)="selectedId = video?.id"
+  [class.lighten-4]="!selected">
+  
+  <div class="card-content">
+    <span class="card-title" class="card-title">{{video?.title}}</span>
+    <p>{{video?.author}}</p>
+  </div>
+</div>

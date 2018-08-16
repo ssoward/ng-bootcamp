@@ -1,0 +1,6 @@
+<app-video-card
+  *ngFor="let video of videos"
+  [video]="video"
+  [selected]="selectedId === video.id"
+  (click)="selectVideo(video)"
+></app-video-card>
