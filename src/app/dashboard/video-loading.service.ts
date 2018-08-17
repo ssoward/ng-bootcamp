@@ -30,7 +30,7 @@ export class VideoLoadingService {
         map(videos => videos.slice(0, 6)),
         map(videos => {
           for (const v of videos) {
-            v.title = v.title.toLowerCase();
+            // v.title = v.title.toLowerCase();
             v.author = '(By: ' + v.author + ')';
           }
           return videos;
