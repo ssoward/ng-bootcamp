@@ -7,16 +7,14 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { StatFiltersComponent } from './stat-filters/stat-filters.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
 import { VideoCardComponent } from './video-card/video-card.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    DashboardRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DashboardRoutingModule
   ],
-  declarations: [VideoDashboardComponent, VideoListComponent,
-    StatFiltersComponent, VideoPlayerComponent, VideoCardComponent]
+  declarations: [VideoDashboardComponent, VideoListComponent, StatFiltersComponent, VideoPlayerComponent, VideoCardComponent]
 })
-
 export class DashboardModule { }
