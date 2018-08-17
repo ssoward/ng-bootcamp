@@ -3,7 +3,10 @@
   [class.lighten-4]="!selected">
   
   <div class="card-content">
-    <span class="card-title" class="card-title">{{video?.title}}</span>
+    <span class="card-title" class="card-title">
+      <!--{{video?.title}}-->
+      <div [innerHTML]="video?.title"></div>
+    </span>
     <p>{{video?.author}}</p>
   </div>
 </div>

@@ -26,6 +26,7 @@ export class VideoLoadingService {
   loadVideos(): Observable<Video[]> {
     return this.http.get<Video[]>(API_URL + '/videos')
       .pipe(
+        // map(videos => [...videos, {'title':'test', 'author':'scott'}]),
         map(videos => videos.slice(0, 6)),
         map(videos => {
           for (const v of videos) {
@@ -33,7 +34,7 @@ export class VideoLoadingService {
             v.author = '(By: ' + v.author + ')';
           }
           return videos;
-        })
+        }),
       );
   }
 }
